@@ -7,8 +7,15 @@ public class CalculatorTest {
 
     @Test
     public void testSum(){
+        int expected = 3;
+        int actual = calculator.sum(1, 2);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSubtract(){
         int expected = -1;
-        int actual = 2;
+        int actual = calculator.subtract(1, 2);
         assertEquals(expected, actual);
     }
 }
