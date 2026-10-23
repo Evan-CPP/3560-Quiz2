@@ -32,4 +32,11 @@ public class CalculatorTest {
         int actual = calculator.divide(4, 2);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testIsEven(){
+        boolean expected = true;
+        boolean actual = calculator.isEven(4);
+        assertEquals(expected, actual);
+    }
 }
